@@ -29,8 +29,6 @@ class App extends Component {
     }
     deleteTodo(key) {
         var newTodos = this.state.todoItems.slice().filter((item, index) => index !== key );
-        console.log('delete2', key);
-        console.log('deleteNew', newTodos);
         this.setState({
             todoItems : newTodos
         });
